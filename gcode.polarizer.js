@@ -242,12 +242,12 @@ window.gCodePolarizer = (function ()
               currentPolarPoint.A = angle;
 
               /*
-                normally we should recalculate required feedrate here, so we can keep the speed up as much as possible.
-                Unfortunately, it is very complicated and I couldn't figure it out yet.
-                Because cartesian based g-code tools may or may not generate feedrates for cartesian movements.
-                Also firmwares may or may not modify the given feedrates according to their capabilities and settings.
-                So, this is a To be step for now.
-                It is not a big issue to use polarized g-code. May raduce speed efficiency but the machine should work fine.
+                Normally we have to recalculate the required feedrate here so we can keep the speed as high as possible.
+                Unfortunately, calculating a good feedrate for every situation is very complex. I need to work on it more.
+                Because cartesian-based g-code tools may or may not generate feedrates for cartesian motions.
+                Firmwares may or may not change the given feedrates according to their capabilities and settings.
+                So, this is a "to do" step for now.
+                It is not a problem to use polarized g-code. It may reduce speed efficiency, but the machine should work fine.
               */
             }
 
