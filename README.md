@@ -1,2 +1,2 @@
 # gCodePolarizerJS
-Cartesian g-code coordinates to the Polar Bear compatible coordinates 
+A library for converting Cartesian g-code coordinates to Polar Bear compatible coordinates
